@@ -8,8 +8,8 @@ difficult elements as time permits.
 Every student should be able to print the string and the
 length of the string.  If you don't remember how, LOOK at
 your programming sessions!!!   
-PUT YOUR NAME HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+Kash 
+"""  # DOne: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -59,11 +59,85 @@ def test_problem2():
     print('Test case 1 Actual: ')
     problem3(string_of_characters)
     print('*********************************************')
-    # TODO: 2. Write at least three reasonable test cases below.
+    # DOne: 2. Write at least three reasonable test cases below.
     #         Three excellent test cases are worth 10 points
+    #  Test case 1
+    #  The given string is civic
+    print('*********************************************')
+    print('Test case 2 Expected: ')
+    print('*********************************************')
+    string_of_characters = 'Thriambak'
+    print('String entered: ',string_of_characters)
+    print('Length of string: ',9)
+    print('Number of alphabetic characters: ',9)
+    print('Number of digits: ', 0)
+    print('Reversed string is: kabmairhT')
+    print('The user entered a normal string')
+    print()
+    print('*********************************************')
+    print('Test case 2 Actual: ')
+    problem3(string_of_characters)
+    print('*********************************************')
+
+    #  Test case 1
+    #  The given string is civic
+    print('*********************************************')
+    print('Test case 3 Expected: ')
+    print('*********************************************')
+    string_of_characters = 'racecar'
+    print('String entered: ',string_of_characters)
+    print('Length of string: ',7)
+    print('Number of alphabetic characters: ',7)
+    print('Number of digits: ', 0)
+    print('Reversed string is: racecar')
+    print('The user entered a palindrome')
+    print()
+    print('*********************************************')
+    print('Test case 3 Actual: ')
+    problem3(string_of_characters)
+    print('*********************************************')
+
+    #  Test case 1
+    #  The given string is civic
+    print('*********************************************')
+    print('Test case 4 Expected: ')
+    print('*********************************************')
+    string_of_characters = '1000B'
+    print('String entered: ',string_of_characters)
+    print('Length of string: ',5)
+    print('Number of alphabetic characters: ',1)
+    print('Number of digits: ', 4)
+    print('Reversed string is: B0001')
+    print('The user entered a normal string')
+    print()
+    print('*********************************************')
+    print('Test case 4 Actual: ')
+    problem3(string_of_characters)
+    print('*********************************************')
 
 
 def problem3(string_of_characters):
+
+    print('String entered:',string_of_characters)
+    print('Length of String: ', len(string_of_characters))
+
+    numbers = 0
+    letters = 0
+    for k in range (len(string_of_characters)):
+        if string_of_characters[k].isdigit():
+            numbers = numbers +1
+        if string_of_characters[k].isalpha():
+            letters = letters +1
+
+    print('Number of alphabetic characters:',letters)
+    print('Number of digits: ',numbers)
+    print('Reversed string is:',reverseString(string_of_characters))
+    if string_of_characters == reverseString(string_of_characters):
+        print('The user entered a palindrome')
+    else:
+        print('The user entered a normal string')
+
+
     """
     What comes in:
           -- a string of characters that contains letters of the alphabet and/or numbers
@@ -121,7 +195,7 @@ def problem3(string_of_characters):
        Reversed string: b21a
        The user entered a normal string
     """
-    # TODO: 3. Implement this function.
+    # DOne: 3. Implement this function.
     # To implement this function, you need to reverse a string.
     # If you write your own method to reverse a string and solve
     # the entire problem, you will get 25 points. If you use the
