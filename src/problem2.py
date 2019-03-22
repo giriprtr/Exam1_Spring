@@ -195,7 +195,7 @@ def problem3(string_of_characters):
        Reversed string: b21a
        The user entered a normal string
     """
-    # DOn: 3. Implement this function.
+    # DOne: 3. Implement this function.
     # To implement this function, you need to reverse a string.
     # If you write your own method to reverse a string and solve
     # the entire problem, you will get 25 points. If you use the
